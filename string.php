@@ -9,6 +9,6 @@ echo "string length : " . strlen($course);
 echo "\n";
 
 $filename = "image.jpg";
-$extension = substr('image.jpg', 6);
+$extension = substr($filename, strlen($filename) - 3);
 echo $extension ;
 ?>
