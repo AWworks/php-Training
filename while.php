@@ -1,14 +1,18 @@
 <?php
+include("sum.php");
 
-$counter = 0;
+echo sum([5,2,9,10]);
+echo "\n";
 
-while ($counter < 10) {
-    $counter += 1;
+// $counter = 0;
 
-    if ($counter % 2 == 0) {
-        echo "Skipping number $counter because it is even.\n";
-        continue;
-    }
+// while ($counter < 10) {
+//     $counter += 1;
 
-    echo "Executing - counter is $counter.\n";
-}
+//     if ($counter % 2 == 0) {
+//         echo "Skipping number $counter because it is even.\n";
+//         continue;
+//     }
+
+//     echo "Executing - counter is $counter.\n";
+// }
