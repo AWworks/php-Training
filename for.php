@@ -1,11 +1,14 @@
 <?php
 
-$odd_numbers = [3, 5, 7, 9, 11, 13, 15, 17, 19, 21];
+$numbers = [11, 3, 7, 21, 13, 15, 59, 1, 5];
 
-// for ($i=0; $i < count($odd_numbers); $i++) { 
-//     echo $odd_numbers[$i] . "\n";
-// }
-
-foreach ($odd_numbers as $number) {
-    echo $number . "\n";
+ $min = $numbers[0]; $max= $numbers[0];
+ for ($i=0; $i < count($numbers); $i++) { 
+ 
+     if ($numbers[$i] <= $min) $min = $numbers[$i];
+     if ($numbers[$i] > $max) $max = $numbers[$i];
+    
 }
+
+echo "Mininmum : $min" ."\n";
+echo "Maximum :  $max";
